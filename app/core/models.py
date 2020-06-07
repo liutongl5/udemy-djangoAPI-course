@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, \
-                                        PermissionsMixin
+                                        PermissionsMixin    # noqa
 
 class UserManager(BaseUserManager):
     def create_user(self, email, password=None, **extra_fields):
